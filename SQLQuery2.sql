@@ -69,6 +69,3 @@ ORDER BY POSTSEASON
 -- selects wins above bubble, and the calculated win percentage rounded to 1 decimalm place
 SELECT WAB as 'Wins Above Bubble', CAST(((W * 100.0) / G) AS DECIMAL(18,1)) AS 'Win %'
 FROM CBB
-
-
-select * from cbb where  conf = 'slnd' order by year desc
